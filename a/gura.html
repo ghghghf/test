@@ -3,14 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>카카오 장난 메시지 공유</title>
-  <!-- 카카오 SDK 불러오기 -->
+
+  <!-- 카카오 SDK -->
   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
   <style>
     body {
       font-family: sans-serif;
       text-align: center;
       margin-top: 100px;
     }
+
     button {
       padding: 12px 24px;
       font-size: 18px;
@@ -21,19 +24,31 @@
     }
   </style>
 </head>
+
 <body>
 
-  <h1>📢 중간고사 패스권 도착!?</h1>
-  <p>친구에게 카카오톡 장난 메시지를 보내보세요 😆</p>
-  <button onclick="sendFoolMessage()">카카오톡으로 공유하기</button>
+  <h1>앙 만우절</h1>
+
+  <!-- 이미지 -->
+  <img src="a/kkk.jpg" style="width:200px; height:auto;">
+
+  <!-- 버튼 -->
+  <p>
+    <button onclick="sendFoolMessage()">껄껄껄껄껄</button>
+  </p>
+
+  <!-- 제작자 -->
+  <h4>제작자</h4>
+  <img src="a/cat.jpg" style="width:50px; height:auto;">
 
   <script>
-    // JavaScript 키로 초기화 (너의 앱 키로 바꿔야 함!)
-    Kakao.init("e7ebbda91e0597aa70640511bc4b9db1");
+    // 카카오 초기화 (네 JS 키)
+    Kakao.init("02105e95fdcf72a24cb8d01168fd4c67");
 
     function sendFoolMessage() {
       Kakao.Link.sendCustom({
         templateId: 131340
+      });
     }
   </script>
 
